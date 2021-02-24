@@ -47,7 +47,7 @@ def get_browser(log_path):
             executable_path=os.path.join(os.getcwd(), 'phantom_js', 'bin', 'phantomjs'),
             port=8081,
             service_log_path=log_path,
-            service_args=['--debug=true']
+            service_args=['--debug=true', '--ignore-ssl-errors=true']     # --ssl-protocol=tlsv1.2
         )
         browser.set_window_size(800, 600)
         return browser

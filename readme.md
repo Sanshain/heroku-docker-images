@@ -1,16 +1,21 @@
 # Docker images weight:
 
-- `alpine` ~ 7-8 mb
-- `python:3.6-slim` ~ 112 mb    
-- `ubuntu` ~ 80 mb
+  
+- `ubuntu` ~ 80 mb (~ 1113 mb)
+    - `update` ~ 120 mb
+    - `python3-pip` ~ 300 mb
+    - `python3` ~ 40 mb
+    - `npm` ~ 550 mb   
+    - `phantomjs` ~ 23 mb 
 
-# Docker image packs weight:
+- `alpine` ~ 7-8 mb (~ 260 mb)
+    - `python` ~ 40 mb
 
-- `python` ~ 40 mb
-- `django` ~ 50 mb
-- `selenium` + `gunicorn` ~ 50 mb
-- `bash` ~ 35 mb
-- `node && npm` ~ 50 - 70 mb
+- `python:3.6-slim` (based on debian) ~ 112 mb (~ 360 mb)
+    - `django` ~ 50 mb
+    - `selenium` + `gunicorn` ~ 50 mb
+    - `bash` ~ 35 mb
+    - `node && npm` ~ 50 - 70 mb
 
 # Manuals:
 

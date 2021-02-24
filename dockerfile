@@ -1,7 +1,8 @@
 # pull official base image
-FROM python:3.6-slim
-# FROM python:3.8-alpine
+
+# FROM python:3.6-slim
 # FROM python:3.6-alpine
+FROM ubuntu
 
 # set work directory
 WORKDIR /app
@@ -13,10 +14,13 @@ ENV DEBUG 1
 
 # install packages
 RUN apt update \
-    && apt install nodejs -y \
-    # && apt install npm -y
-    && apt install libfontconfig -y
-RUN export OPENSSL_CONF=/etc/ssl/
+    && apt install python3-pip python3 -y \
+    && apt install npm -y \
+    && npm i n \
+    && n 14.4.0 \
+    && npm i phantomjs -g 
+    # && apt install libfontconfig -y
+# RUN export OPENSSL_CONF=/etc/ssl/
 
 # install psycopg2
 # RUN apk update \
@@ -35,7 +39,7 @@ RUN export OPENSSL_CONF=/etc/ssl/
 
 # install dependencies
 COPY ./requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # copy project
 COPY . .
