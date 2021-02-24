@@ -21,7 +21,7 @@ ENV DEBUG 1
 # install psycopg2
 RUN apk update \
     && apk add bash \
-    && apk add --update nodejs npm     
+    && apk add firefox
     # && apk add busybox-extras   # to httpd
     
     # && apk add --virtual build-deps gcc python3-dev musl-dev \
