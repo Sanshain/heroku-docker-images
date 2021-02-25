@@ -1,1 +1,8 @@
 examples/
+.vscode/
+.git/
+
+*.sh
+
+.dockerignore
+.gitignore
