@@ -192,3 +192,24 @@
 2021-02-24T17:27:59 [DEBUG] HTTP Response - Sending Header "Content-Length" = "74"
 2021-02-24T17:27:59 [DEBUG] HTTP Response - Sending Header "Content-Type" = "application/json;charset=UTF-8"
 2021-02-24T17:27:59 [DEBUG] Network - Resource request error: QNetworkReply::NetworkError(OperationCanceledError) ( "Operation canceled" ) URL: "https://sotis-online.ru/get.php?chr=dt:20210224085232;cid:2417766;sx:m;name:New%20chart&ajax=1"
+1614239565388	geckodriver	INFO	Listening on 127.0.0.1:34103
+1614239566426	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9isdVZ"
+*** You are running in headless mode.
+1614239569703	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1614239569703	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1614239574798	Marionette	INFO	Listening on port 42675
+1614239574830	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 113: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 113: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 113: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 113: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+(/usr/lib/firefox/firefox:9839): dconf-WARNING **: 07:53:03.704: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/PeerConnection.js, line 1895: TypeError: this._dompc._pc is undefined
+1614239584333	Marionette	INFO	Stopped listening on port 42675
+[Parent 9665, Gecko_IOThread] WARNING: pipe error (65): Connection reset by peer: file /build/firefox-fvtOIe/firefox-64.0+linuxmint2+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 9665, Gecko_IOThread] WARNING: pipe error (81): Connection reset by peer: file /build/firefox-fvtOIe/firefox-64.0+linuxmint2+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 9665, Gecko_IOThread] WARNING: pipe error (31): Connection reset by peer: file /build/firefox-fvtOIe/firefox-64.0+linuxmint2+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 9665, Gecko_IOThread] WARNING: pipe error (126): Connection reset by peer: file /build/firefox-fvtOIe/firefox-64.0+linuxmint2+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
