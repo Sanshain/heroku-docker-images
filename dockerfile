@@ -1,8 +1,7 @@
 # pull official base image
 # FROM python:3.6-slim
 # FROM python:3.8-alpine
-# FROM python:3.6-alpine
-FROM arch-linux
+FROM python:3.6-alpine
 
 # set work directory
 WORKDIR /app
@@ -12,8 +11,6 @@ WORKDIR /app
 # ENV PYTHONUNBUFFERED 1
 ENV DEBUG 1
 
-RUN pacman -u 
-
 # install packages
 # RUN apt update \
 #     && apt install nodejs -y \
@@ -22,9 +19,9 @@ RUN pacman -u
 # RUN export OPENSSL_CONF=/etc/ssl/
 
 # install psycopg2
-# RUN apk update \
-#     && apk add bash \
-#     && apk add --update nodejs npm
+RUN apk update \
+    && apk add bash \
+    && apk add firefox
     # && apk add busybox-extras   # to httpd
     
     # && apk add --virtual build-deps gcc python3-dev musl-dev \
