@@ -1,1 +1,1 @@
-docker build -t web-d:latest .
+docker build -t web-u-p:latest .
