@@ -34,8 +34,8 @@ RUN apk update \
     
 
 # install dependencies
-# COPY ./requirements.txt .
-# RUN pip install -r requirements.txt
+COPY ./requirements.txt .
+RUN pip install -r requirements.txt
 
 # copy project
 COPY . .

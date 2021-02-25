@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '9l0py%7wqht1dwe0qi!+f5iluv-msp@0lcle0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get('DEBUG', True))
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'blooming-hollows-52049.herokuapp.com']
 
 
 # Application definition

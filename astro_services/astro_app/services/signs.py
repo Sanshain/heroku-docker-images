@@ -9,6 +9,8 @@ from datetime import datetime
 # import requests
 # from bs4 import BeautifulSoup
 from selenium.webdriver.firefox.options import Options
+from functools import lru_cache
+
 
 logger = logging.getLogger(__name__)
 
@@ -34,6 +36,7 @@ MARK_SIGNS = {
     ';': 'Овен',
 }
 
+@lru_cache(maxsize=2)
 def get_browser(log_path):    
 
     if platform.startswith('win') or True:        
@@ -85,7 +88,7 @@ def get_sign(date=None, base='Венера'):
     )
     logger.info(sign_mark)
 
-    browser.close()
+    # browser.close()
     return MARK_SIGNS.get(sign_mark)
 
 
