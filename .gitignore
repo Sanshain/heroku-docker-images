@@ -1,6 +1,6 @@
 *.pyc
 *.sqlite
-*.sh
+# *.sh
 
 examples/
 phantomjs/
